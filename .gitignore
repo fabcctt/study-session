@@ -19,3 +19,6 @@ cmake-build-*/
 Thumbs.db
 Desktop.ini
 .DS_Store
+# C Foundation - Pointer Lab executables
+/c1-projects/c-foundation/pointers/pointers_demo
+/c1-projects/c-foundation/pointers/pointers_tests
