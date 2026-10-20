@@ -10,14 +10,6 @@ Los ejercicios abarcan distintos conceptos, desde sintaxis y fundamentos hasta p
 
 Los proyectos están separados por temas para facilitar su organización y revisión.
 
-## Organización
-
-Los proyectos se encuentran dentro de `c1-projects/`, divididos en tres secciones principales:
-
-- **C++ Foundation:** fundamentos de C++, funciones, clases, punteros, memoria dinámica y STL.
-- **C Foundation:** fundamentos de C, punteros, arreglos, cadenas, estructuras y otros conceptos del lenguaje.
-- **Data Structures:** implementación de estructuras de datos y algoritmos como listas enlazadas, stacks, queues, heaps, tries y grafos.
-
 Algunos proyectos fueron reconstruidos como parte de mis prácticas de estudio.
 
 ## Código fuente
