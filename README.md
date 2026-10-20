@@ -1,27 +1,49 @@
 # Systems Programming
 
-Repositorio para organizar mis proyectos y prácticas de Cycle 1.
+Repositorio donde organizo mis proyectos y ejercicios relacionados con el estudio de C, C++, estructuras de datos y programación de sistemas.
+
+## Sobre el repositorio
+
+Este repositorio reúne proyectos de práctica que utilizo para estudiar el funcionamiento de los lenguajes de programación de bajo nivel.
+
+Los ejercicios abarcan distintos conceptos, desde sintaxis y fundamentos hasta punteros, gestión de memoria, estructuras de datos y algoritmos.
+
+Los proyectos están separados por temas para facilitar su organización y revisión.
+
+## Organización
+
+Los proyectos se encuentran dentro de `c1-projects/`, divididos en tres secciones principales:
+
+- **C++ Foundation:** fundamentos de C++, funciones, clases, punteros, memoria dinámica y STL.
+- **C Foundation:** fundamentos de C, punteros, arreglos, cadenas, estructuras y otros conceptos del lenguaje.
+- **Data Structures:** implementación de estructuras de datos y algoritmos como listas enlazadas, stacks, queues, heaps, tries y grafos.
+
+Algunos proyectos fueron reconstruidos como parte de mis prácticas de estudio.
 
 ## Código fuente
 
-Aquí guardo los proyectos que he ido reconstruyendo mientras estudio C y C++. Los archivos están organizados por temas, manteniendo una estructura modular con archivos `.c`, `.h`, `.cpp`, `.hpp` y `main` cuando corresponde.
+Los proyectos utilizan archivos `.c` y `.h` para C, y `.cpp` y `.hpp` para C++.
 
-Algunos proyectos también incluyen pruebas con `assert()`.
+En los proyectos modulares, las declaraciones y las implementaciones se mantienen separadas del programa principal.
+
+Algunos también incluyen un archivo de pruebas para comprobar el funcionamiento de sus funciones.
 
 ## Compilación
 
-Los proyectos se compilan principalmente con GCC y G++ en Linux y Windows.
+Los proyectos están preparados principalmente para compilarse con GCC y G++, utilizando C11 y C++17 según corresponda.
 
-Cada proyecto puede incluir su propio `README.md` con los comandos necesarios para compilarlo y ejecutarlo.
+Trabajo principalmente en Gentoo Linux y Windows.
 
-## Sobre este repositorio
+Los comandos específicos de compilación y ejecución se encuentran en los README individuales cuando están disponibles.
 
-Este repositorio es donde guardo mis proyectos y prácticas mientras estudio lenguajes de programación de bajo nivel, principalmente C y C++.
+## Pruebas
 
-Mi objetivo es entender cómo funcionan estos lenguajes, su sintaxis, el manejo de memoria, la compilación y su relación con el hardware y los sistemas operativos.
+Algunos proyectos incluyen archivos `tests.c` o `tests.cpp` con pruebas automatizadas.
 
-Uso estos proyectos para poner en práctica lo que voy aprendiendo y comprender mejor el funcionamiento interno de los lenguajes.
+Estas pruebas permiten comprobar operaciones básicas, resultados esperados y ciertos casos límite.
 
-No puedo garantizar que domine todos los programas que están aquí ni que comprenda completamente cada parte del código. Algunos temas todavía los estoy estudiando y otros los tengo pendientes de repasar.
+## Propósito
 
-Más adelante quiero continuar con Rust, Assembly x86-64, sistemas operativos y arquitectura de computadoras.
+Este repositorio forma parte de mi estudio de lenguajes de programación y sistemas informáticos.
+
+Mi interés principal está en comprender la sintaxis, la memoria, la compilación y la relación entre el software, los sistemas operativos y el hardware.
