@@ -1,39 +1,14 @@
-# Pointer Lab — C Foundation
+# Punteros
 
-A modular C project demonstrating pointer fundamentals and pointer arithmetic.
+Modifica valores a través de punteros, intercambia enteros y recorre un arreglo con aritmética de punteros.
 
-## Features
-
-- Modify variables through pointers
-- Swap integer values using pointers
-- Modify arrays using pointer arithmetic
-- Calculate the sum of array elements
-- Basic null-pointer validation
-- Automated tests using `assert()`
-
-## Project Structure
-
-- `main.c` — Main demonstration
-- `pointers.h` — Function declarations
-- `pointers.c` — Function implementations
-- `tests.c` — Automated tests
-
-## Build
-
-Compile the demonstration:
-
-```bash
-gcc -std=c11 -Wall -Wextra -Wpedantic main.c pointers.c -o pointers_demo
-./pointers_demo
+```sh
+make run
+make test
 ```
 
-Compile and run the tests:
+Las pruebas cubren valores, arreglos y punteros nulos.
 
-```bash
-gcc -std=c11 -Wall -Wextra -Wpedantic tests.c pointers.c -o pointers_tests
-./pointers_tests
-```
+`pointers.h` declara la interfaz, `pointers.c` la implementa y `tests.c` contiene las comprobaciones.
 
-## Purpose
-
-Educational reconstruction for practicing C pointers, memory addresses, array traversal, modular programming, and automated testing.
+La compilación usa C11. Los ejecutables son `build/demo` y `build/tests`. `make sanitize` ejecuta las pruebas con ASan y UBSan; `make clean` borra los archivos de compilación.

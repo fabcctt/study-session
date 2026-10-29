@@ -1,7 +1,5 @@
 # Arrays & Dynamic Arrays
 
-Reconstrucción educativa de un proyecto estudiado anteriormente. No son archivos originales recuperados.
-
 Compara un array de tamaño fijo con un array dinámico de enteros que administra su memoria mediante `realloc`. `size` cuenta elementos usados; `capacity` cuenta posiciones reservadas. El crecimiento geométrico permite inserciones al final en O(1) amortizado; insertar o eliminar en medio cuesta O(n). El acceso por índice cuesta O(1).
 
 ## Archivos y contrato
@@ -15,15 +13,12 @@ Inicializa con `array_init` y libera con `array_destroy`. No copies la estructur
 
 ## Compilar y ejecutar
 
-Desde esta carpeta, con GCC compatible con C11:
-
-```powershell
-gcc -std=c11 -Wall -Wextra -Wpedantic -Werror dynamic_array.c main.c -o arrays.exe
-.\arrays.exe
-gcc -std=c11 -Wall -Wextra -Wpedantic -Werror dynamic_array.c tests.c -o tests.exe
-.\tests.exe
+```sh
+make run
+make test
+make sanitize
 ```
 
-En Linux, usa los mismos comandos de GCC y ejecuta `./arrays.exe` y `./tests.exe`; la extensión no determina el formato del ejecutable. No compiles `main.c` y `tests.c` juntos: cada uno define su propio punto de entrada. Las pruebas requieren las aserciones habilitadas (sin `-DNDEBUG`).
-
-La demostración muestra `10 15 20 30 40`, elimina `10` y termina con cuatro elementos. Las pruebas imprimen `Arrays: all tests passed.` al completarse.
+Se usa C11. `build/demo` ejecuta el ejemplo y `build/tests` las pruebas.
+`make clean` borra `build/`. Los módulos están enumerados en el Makefile;
+las reglas comunes están en `../topic.mk`.

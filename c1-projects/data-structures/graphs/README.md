@@ -1,7 +1,5 @@
 # Graphs — BFS / DFS
 
-Reconstrucción educativa de un proyecto estudiado anteriormente. No son archivos originales recuperados.
-
 Grafo de vértices numerados desde cero, representado mediante listas de adyacencia. Soporta aristas dirigidas o no dirigidas, ciclos, aristas repetidas y bucles de un vértice a sí mismo.
 
 ## Archivos
@@ -35,16 +33,15 @@ Crear el grafo cuesta O(V) y añadir una arista O(1). Cada recorrido cuesta O(V 
 
 ## Compilar y ejecutar
 
-Desde esta carpeta, con GCC compatible con C11:
-
-```powershell
-gcc -std=c11 -Wall -Wextra -Wpedantic -Werror graph.c queue.c stack.c main.c -o graphs.exe
-.\graphs.exe
-gcc -std=c11 -Wall -Wextra -Wpedantic -Werror graph.c queue.c stack.c tests.c -o tests.exe
-.\tests.exe
+```sh
+make run
+make test
+make sanitize
 ```
 
-En Linux utiliza los mismos comandos de GCC y ejecuta `./graphs.exe` y `./tests.exe`. Compila cada punto de entrada por separado; no uses `-DNDEBUG` en las pruebas.
+Se usa C11. `build/demo` ejecuta el ejemplo y `build/tests` las pruebas.
+`make clean` borra `build/`. Los módulos están enumerados en el Makefile;
+las reglas comunes están en `../topic.mk`.
 
 ## Resultado y pruebas
 
